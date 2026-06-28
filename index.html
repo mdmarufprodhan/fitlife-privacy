@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — FitLife</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0f0f14;
+      color: #e0e0e8;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a0a3a 0%, #0d1a3a 100%);
+      border-bottom: 1px solid rgba(120, 80, 255, 0.2);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .logo-name {
+      font-size: 26px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #a78bfa, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 6px;
+    }
+
+    header p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .intro-card {
+      background: rgba(124, 58, 237, 0.08);
+      border: 1px solid rgba(124, 58, 237, 0.2);
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .intro-card strong { color: #a78bfa; }
+
+    section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 800;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #c4b5fd;
+      margin: 18px 0 8px;
+    }
+
+    p, li {
+      font-size: 14px;
+      color: rgba(255,255,255,0.65);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    ul li { margin-bottom: 6px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+
+    th {
+      text-align: left;
+      padding: 10px 14px;
+      background: rgba(124, 58, 237, 0.12);
+      color: #a78bfa;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    th:first-child { border-radius: 10px 0 0 0; }
+    th:last-child  { border-radius: 0 10px 0 0; }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      color: rgba(255,255,255,0.65);
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+
+    .chip {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    .chip-no  { background: rgba(239,68,68,0.15);  color: #f87171; }
+    .chip-yes { background: rgba(34,197,94,0.15);  color: #4ade80; }
+
+    .highlight-box {
+      background: rgba(34, 197, 94, 0.06);
+      border: 1px solid rgba(34, 197, 94, 0.15);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-top: 12px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .highlight-box strong { color: #4ade80; }
+
+    .contact-card {
+      background: linear-gradient(135deg, rgba(124,58,237,0.12), rgba(79,70,229,0.08));
+      border: 1px solid rgba(124, 58, 237, 0.25);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    .contact-card h3 {
+      color: #a78bfa;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p { margin-bottom: 16px; }
+
+    .email-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      color: white;
+      font-weight: 700;
+      font-size: 14px;
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .email-btn:hover { opacity: 0.85; }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.25);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 32px 16px 60px; }
+      h2 { font-size: 15px; }
+      table { font-size: 12px; }
+      th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="logo-icon">💪</div>
+      <span class="logo-name">FitLife</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: June 28, 2026</p>
+  </header>
+
+  <div class="container">
+
+    <div class="intro-card">
+      FitLife is built with your privacy in mind. This policy explains exactly what data we collect, why we collect it, and how we protect it. <strong>We never sell your personal data.</strong>
+    </div>
+
+    <!-- 1 -->
+    <section>
+      <h2><span class="num">1</span> Information We Collect</h2>
+
+      <h3>Account Information</h3>
+      <p>When you sign in with Google, we collect your <strong>name</strong> and <strong>email address</strong> to create and manage your FitLife account.</p>
+
+      <h3>Health &amp; Fitness Data</h3>
+      <p>With your explicit permission, FitLife reads and writes to Apple HealthKit:</p>
+      <ul>
+        <li>Step count and active calories burned</li>
+        <li>Workout sessions (type, duration, calories)</li>
+      </ul>
+      <div class="highlight-box">
+        <strong>Important:</strong> Your health data is used solely to display your fitness progress inside the app. It is never shared with advertisers or third parties.
+      </div>
+
+      <h3>Location Data</h3>
+      <p>We request your location <em>only</em> when Ramadan Mode is enabled, to automatically detect your city for accurate Suhoor and Iftar prayer times. Location data is used in real-time on your device and is <strong>not stored on our servers</strong>.</p>
+
+      <h3>Camera</h3>
+      <p>We access your camera only to scan food barcodes for quick nutrition logging. No photos or images are stored or transmitted to our servers.</p>
+
+      <h3>Workout &amp; Nutrition Logs</h3>
+      <p>Workout sessions, nutrition entries, meal logs, body measurements, and notes you create are stored securely in Firebase Firestore, linked only to your account.</p>
+
+      <h3>Usage &amp; Analytics Data</h3>
+      <p>We collect anonymised usage data (screens visited, features used, crash reports) via Firebase Analytics to improve the app experience. This data does not personally identify you.</p>
+
+      <h3>Advertising Data</h3>
+      <p>FitLife shows ads to free users via Google AdMob. AdMob may use your device's Advertising Identifier (IDFA) to show relevant ads, subject to your App Tracking Transparency (ATT) consent prompt on iOS.</p>
+
+      <h3>Purchase Information</h3>
+      <p>Subscription purchases are processed entirely by Apple's App Store and managed by RevenueCat. We do not store or have access to your payment card details.</p>
+    </section>
+
+    <!-- 2 -->
+    <section>
+      <h2><span class="num">2</span> How We Use Your Information</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Name &amp; email</td><td>Account creation and personalisation</td></tr>
+          <tr><td>Health data</td><td>Display fitness progress, sync workouts to Apple Health</td></tr>
+          <tr><td>Location</td><td>Auto-detect city for Ramadan prayer times only</td></tr>
+          <tr><td>Camera</td><td>Barcode scanning for food nutrition logging</td></tr>
+          <tr><td>Analytics</td><td>App performance monitoring and crash reporting</td></tr>
+          <tr><td>Ad data</td><td>Show relevant ads to free users (with ATT consent)</td></tr>
+          <tr><td>Purchase data</td><td>Manage your Pro subscription status</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 3 -->
+    <section>
+      <h2><span class="num">3</span> Data Sharing</h2>
+      <p>We <strong>do not sell</strong> your personal information. We share data only with the following trusted service providers, solely to operate the app:</p>
+      <table>
+        <thead>
+          <tr><th>Service</th><th>Purpose</th><th>Sells Data?</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Google Firebase</td><td>Authentication, database, analytics</td><td><span class="chip chip-no">No</span></td></tr>
+          <tr><td>Google AdMob</td><td>Advertising for free users</td><td><span class="chip chip-no">No</span></td></tr>
+          <tr><td>RevenueCat</td><td>Subscription management</td><td><span class="chip chip-no">No</span></td></tr>
+          <tr><td>Apple HealthKit</td><td>Fitness data sync (on-device only)</td><td><span class="chip chip-no">No</span></td></tr>
+          <tr><td>Open Food Facts / USDA</td><td>Food nutrition database lookups</td><td><span class="chip chip-no">No</span></td></tr>
+          <tr><td>Aladhan API</td><td>Prayer times for Ramadan Mode</td><td><span class="chip chip-no">No</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 4 -->
+    <section>
+      <h2><span class="num">4</span> Data Retention</h2>
+      <p>Your account data is retained as long as your account remains active. You may request deletion at any time by contacting us. Upon deletion, all your personal data is permanently removed from our servers within <strong>30 days</strong>.</p>
+    </section>
+
+    <!-- 5 -->
+    <section>
+      <h2><span class="num">5</span> Children's Privacy</h2>
+      <p>FitLife is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it immediately.</p>
+    </section>
+
+    <!-- 6 -->
+    <section>
+      <h2><span class="num">6</span> Your Rights</h2>
+      <p>Depending on your location, you may have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Request correction of inaccurate data</li>
+        <li>Request permanent deletion of your account and data</li>
+        <li>Withdraw consent for optional data collection (location, ad tracking)</li>
+        <li>Export a copy of your data</li>
+      </ul>
+      <p style="margin-top:12px">To exercise any of these rights, contact us at the email below.</p>
+    </section>
+
+    <!-- 7 -->
+    <section>
+      <h2><span class="num">7</span> Security</h2>
+      <p>We use industry-standard security measures including encrypted data transmission (HTTPS/TLS) and Firebase Security Rules to protect your data. While no method of internet transmission is 100% secure, we are committed to protecting your personal information using commercially acceptable means.</p>
+    </section>
+
+    <!-- 8 -->
+    <section>
+      <h2><span class="num">8</span> Third-Party Links</h2>
+      <p>The app may contain links to third-party services (e.g. YouTube tutorials). We are not responsible for the privacy practices of those services and encourage you to review their individual privacy policies.</p>
+    </section>
+
+    <!-- 9 -->
+    <section>
+      <h2><span class="num">9</span> Changes to This Policy</h2>
+      <p>We may update this Privacy Policy periodically. We will notify you of significant changes by updating the "Last updated" date at the top of this page. Continued use of the app after changes constitutes your acceptance of the updated policy.</p>
+    </section>
+
+    <!-- Contact -->
+    <div class="contact-card">
+      <h3>Questions about your privacy?</h3>
+      <p>We're happy to help. Reach out and we'll respond as soon as possible.</p>
+      <a class="email-btn" href="mailto:marufprodhan463@gmail.com?subject=FitLife%20Privacy%20Inquiry">
+        marufprodhan463@gmail.com
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2026 FitLife. All rights reserved.
+  </footer>
+
+</body>
+</html>
